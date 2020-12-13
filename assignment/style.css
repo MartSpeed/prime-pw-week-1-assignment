@@ -1,31 +1,61 @@
+:root {
+  font-size: 16px;
+  font-family: sans-serif;
+  --bg-primary: #e8e8e8;
+  --bg-secondary: #30475e;
+  --text-primary: #222831;
+  --text-secondary: #f05454;
+}
 /* Give your page a fun background color */
 body{
-  background-color: #7ea4b3;
+  background-color: var(--bg-secondary);
 }
 
 /* Make the header and footer a different color from the background */
 h1, footer {
-  background-color: #b38d7e;
+  margin: auto;
+  border-radius: 5px;
+
+  padding: 1px;
+
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
 }
 
 /* Align the h1 containing your name in the center of the header*/
-h1 {
+h1, h2 {
   text-align: center;
+  color: var(--text-primary);
+}
+
+footer{
+  padding: 1px 15px;
+  text-align: right;
 }
 
 /* Make your p tag a different color and italic */
 p {
-  color: #eeecc4;
-  font-style: italic;;
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
 /* Put a border around your image */
 img {
+  display: block;
+  margin: 10px auto;
+
   border-style: double;
+  align-self: center;
+  width:400px;
+  height:300px;
+
+  transform: rotate(0deg);
+  transiton: 700ms ease;
+
 }
 
 /* Change the font-family of your list */
 ul {
   font-family: 'Nerko One', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
 }
